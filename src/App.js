@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting={'Bienvenidos'}/>
+      <ItemListContainer greeting={'Bienvenidos a nuestra tienda Arduino'}/>
     </div>
   );
 }
