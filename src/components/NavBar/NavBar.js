@@ -6,7 +6,7 @@ const NavBar = () => {
         <nav className="level">
             <div className="container is-max-desktop">
               <div className="notification is-primary">
-               <h2 className="title is-2"><SiArduino /> Ecommerce </h2>
+               <h2 className="title is-2"><SiArduino /> e-Commerce </h2>
                 
                  <div class="buttons is-centered" >
                     <button className="button is-black">Placas</button>
