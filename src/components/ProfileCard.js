@@ -22,8 +22,8 @@ function ProfileCard({ titulo , handle , img}){
      
     return (
         <div className="card">
-            <div className="card-img">
-                <figure className="image is-1by1">
+            <div className="card-img ">
+                <figure className="image is-192x192">
                     <img src={img} alt="logo"/>
                 </figure>
             </div>         
