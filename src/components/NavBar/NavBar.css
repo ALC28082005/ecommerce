@@ -1,0 +1,35 @@
+.navbar{
+    margin-left: 10px;
+    margin-right: 10px;
+    display:flex;
+}
+
+.title{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    
+    
+}
+
+.button{
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-inline: 30px;
+    font-size:28px;
+    
+}
+.widget{
+    display:flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+

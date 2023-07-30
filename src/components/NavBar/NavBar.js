@@ -1,24 +1,31 @@
+import './NavBar.css'
 import CartWidget from "../CartWidget/CartWidget"
-import { SiArduino } from 'react-icons/si';
+import { SiArduino } from 'react-icons/si'
+import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <nav className="level">
-            <div className="container is-max-desktop">
-              <div className="notification is-primary">
-               <h2 className="title is-2"><SiArduino /> eCommerce </h2>
+
+        <nav class="navbar is-primary">
+            <Link to ='/'>
+           <h2 className="title is-2"><SiArduino /> eCommerce</h2>
+           </Link>
+            <div className='Categories'>
+                <NavLink to={`/category/placas`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Placas</NavLink>
+                <NavLink to={`/category/sensores`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Sensores</NavLink>
+                <NavLink to={`/category/actuadores`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Actuadores</NavLink>
                 
-                 <div class="buttons is-centered" >
-                    <button className="button is-black">Placas</button>
-                    <button className="button is-black">Sensores</button>
-                    <button className="button is-black">Actuadores</button>
-                 </div>
-                 <CartWidget/>
-                </div>
-                </div>
-        
+                
+            </div>
+            <div className="widget">
+            <CartWidget/> 
+            </div>
             
-        </nav>
+            
+            
+        
+    </nav>
+
     )
 }
 
