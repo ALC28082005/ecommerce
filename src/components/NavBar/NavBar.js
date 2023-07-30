@@ -1,6 +1,6 @@
 import './NavBar.css'
 import CartWidget from "../CartWidget/CartWidget"
-//import { SiArduino } from 'react-icons/si'
+import { SiArduino } from 'react-icons/si'
 import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
@@ -8,7 +8,7 @@ const NavBar = () => {
 
         <nav class="navbar">
             <Link to ='/'>
-           <h3>Ecommerce</h3>
+           <h3><SiArduino/>Ecommerce</h3>
            </Link>
             <div className='Categories'>
                 <NavLink to={`/category/placas`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Placas</NavLink>
