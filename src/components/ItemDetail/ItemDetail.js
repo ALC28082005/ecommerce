@@ -1,6 +1,6 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
-//import { useState } from 'react'
+
 
 const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
 
