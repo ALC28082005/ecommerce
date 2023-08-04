@@ -1,34 +1,26 @@
+nav .navbar{
+    background-color: aqua;
+}
 .navbar{
-    margin-left: 10px;
-    margin-right: 10px;
-    display:flex;
+    display: flex;
+    flex-direction: row;
     font-size:18px;
+    
+    
   
     
 }
+.Option{
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: aqua;
+}
 
-.title{
+.navbar a{
     margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttons{
-    display:flex;
-    flex-direction: row;
-    
-    
-}
-
-.button{
-    align-items: center;
-    justify-content: center;
-    display: inline-block;
-    margin-top: 20px;
-    margin-inline: 30px;
-    font-size:28px;
-    
 }
 .widget{
     display:flex;
