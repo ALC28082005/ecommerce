@@ -7,7 +7,7 @@ const products = [
         category: 'placa',
         img: '../../assets/arduino.png',
         stock: 25,
-        description: 'Descripcion de Arduino Uno'
+        description: 'Placa Arduino Uno'
 
     },
 
@@ -18,7 +18,7 @@ const products = [
         category: 'sensores',
         img: '../../assets/movimiento.png',
         stock: 21,
-        description: 'Descripcion de Sensor de movimiento'
+        description: ' Sensor de movimiento'
 
     },
 
@@ -29,7 +29,7 @@ const products = [
         category: 'actuadores',
         img: '../../assets/modulo-relay-1-canal.png',
         stock: 18,
-        description: 'Descripcion de Modulo relay'
+        description: 'Modulo relay'
 
     },
 
@@ -55,7 +55,7 @@ export const getProductById = (productId) =>{
 export const getProductsByCategory = (categoryId)=> {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(categoryId)
+            resolve(products)
         }, 500)
     })
 }
