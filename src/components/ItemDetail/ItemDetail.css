@@ -1,0 +1,8 @@
+.CardItem{
+  
+    justify-content: center;
+    gap: 30px 60px;
+    margin: 40px 20px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}

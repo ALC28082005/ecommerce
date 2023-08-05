@@ -4,10 +4,10 @@ const products = [
         id: '1',
         name: 'Arduino Uno',
         price: 1500,
-        category: 'placa',
+        category: 'placas',
         img: '../../assets/arduino.png',
         stock: 25,
-        description: 'Placa Arduino Uno'
+        description: 'Placa de desarrollo y el modelo de referencia para herramientas de creación de prototipos para la educación.'
 
     },
 
@@ -18,7 +18,7 @@ const products = [
         category: 'sensores',
         img: '../../assets/movimiento.png',
         stock: 21,
-        description: ' Sensor de movimiento'
+        description: 'El sensor de Movimiento (PIR) es un dispositivo utilizado para la detección de movimiento o presencia. Se basa en la medición de radiación infrarroja pasiva.'
 
     },
 
@@ -29,10 +29,21 @@ const products = [
         category: 'actuadores',
         img: '../../assets/modulo-relay-1-canal.png',
         stock: 18,
-        description: 'Modulo relay'
+        description: 'Permite controlar el encendido/apagado de equipos de potencia'
 
     },
 
+    {
+        id: '4',
+        name: 'Sensor de temperatura y humedad',
+        price: 587,
+        category: 'sensores',
+        img: '../../assets/censor_humedad_y_temperatura.png',
+        stock: 21,
+        description: 'utiliza un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos.'
+
+    },
+   
 ];
 
 export const getProducts = ()=> {
@@ -55,7 +66,7 @@ export const getProductById = (productId) =>{
 export const getProductsByCategory = (categoryId)=> {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products)
+            resolve(products.filter(prod => prod.category.toLowerCase() === categoryId.toLowerCase()))
         }, 500)
     })
 }

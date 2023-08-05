@@ -7,9 +7,9 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
  return (
     <article className="CardItem">
         <header className="Header'">
-            <h2 className="ItemHeader">
+            <h3 className="ItemHeader">
                 {name}
-            </h2>
+            </h3>
         </header>
         <picture>
             <img src={img} alt= {name} className="ItemImg"/>
