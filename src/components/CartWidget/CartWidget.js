@@ -1,12 +1,18 @@
 import carrito from './assets/carrito.png'
 import './CartWidget.css'
+import { useContext } from 'react'
+import { CartContext} from '../../context/CartContext'
+import {Link} from 'react-router-dom'
 
 const CartWidget = () => {
-    return (
+    const { totalQuantity } = useContext(CartContext)
 
-         <div class="cart">
-            <img class="image is-48x48" src={carrito} alt="cart-widget"/>0
-         </div>
+    return (
+        <Link to='/cart' className='CartWidget' style={{display: totalQuantity > 0 ? 'block': 'none'}}>
+            <img className= 'CartImg' src={carrito} alt="cart-widget"/>
+        </Link>
+
+         
 
     )
 }
