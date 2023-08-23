@@ -23,7 +23,7 @@ const ItemListContainer = ({ greeting }) => {
 getDocs(collectionRef)
    .then(response =>{
     const productsAdapted = response.docs.map(doc =>{
-        const data = doc. data()
+        const data = doc.data()
         return { id:doc.id, ...data}
     })
     setProducts(productsAdapted)
@@ -35,12 +35,14 @@ getDocs(collectionRef)
    .finally(() =>{
     setLoading(false)
    })
+}, [categoryId])
 
-   
-
-   
-
-})
+return(
+    <div>
+    {loading ? <p> Cargando...</p>:
+    <ItemList products={products}/>}
+    </div>
+)
 }
 
 export default ItemListContainer
