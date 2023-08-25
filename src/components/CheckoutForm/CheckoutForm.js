@@ -52,6 +52,7 @@ const CheckoutForm = ({ onConfirm}) =>{
 
           </div>
         </form>
+        
         </div>
     )
 }

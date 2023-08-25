@@ -13,7 +13,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
         setQuantityAdded (quantity)
 
         const item = {
-            id, name, price
+            id, name, price, img
         }
 
         addItem(item, quantity)
@@ -26,7 +26,7 @@ const ItemDetail = ({ id, name, img, category, description, price, stock}) => {
             </h3>
         </header>
         <picture>
-            <img src={`../assets/${img}`} alt= {name} className="ItemImg"/>
+            <img src={img} alt= {name} className="ItemImg"/>
         </picture>
         <section>
             <p className="Info">
