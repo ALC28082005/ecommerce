@@ -38,7 +38,7 @@ const products = [
         name: 'Sensor de temperatura y humedad',
         price: 587,
         category: 'sensores',
-        img: '../../assets/censor_humedad_y_temperatura.png',
+        img: '../../assets/sensor_humedad_y_temperatura.png',
         stock: 21,
         description: 'utiliza un sensor capacitivo de humedad y un termistor para medir el aire circundante, y muestra los datos mediante una señal digital en el pin de datos.'
 

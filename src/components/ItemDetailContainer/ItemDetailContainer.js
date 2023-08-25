@@ -34,7 +34,8 @@ const ItemDetailContainer = () => {
 
     return(
         <div className="ItemDetailContainer">
-            <ItemDetail {...products} />
+            {loading ? <p> Cargando...</p>:
+            <ItemDetail {...products} />}
 
         </div>
     )
