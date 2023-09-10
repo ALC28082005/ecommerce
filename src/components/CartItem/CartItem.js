@@ -3,7 +3,7 @@ import React from 'react';
 import { useContext } from 'react';
 
 
-const CartItem = ({ products }) => {
+export const CartItem = ({ products }) => {
     const { removeProducts} = useContext(CartContext)
 
 
@@ -24,7 +24,7 @@ const CartItem = ({ products }) => {
                 <p>
                     Subtotal: {products.quantity * products.price}
                 </p>
-                <button onClick={() => removeProducts(products.id)} className='Option'>X</button>
+                <button onClick={() => removeProducts(products.id)} className='Option'>Eliminar</button>
                 
             </div>
         </div>

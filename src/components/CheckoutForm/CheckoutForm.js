@@ -19,7 +19,7 @@ const CheckoutForm = ({ onConfirm}) =>{
 
     return (
         <div className='Container'>
-        <form onsubmit={handleConfirm} className='Form'>
+        <form onSubmit={handleConfirm} className='Form'>
           <label className='Label'>
             Nombre
             <input

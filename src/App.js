@@ -6,7 +6,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
-import { CartProvider } from './Context/CartContext';
+import CartProvider from './Context/CartContext';
 import "bulma/css/bulma.css";
 
 function App() {

@@ -3,13 +3,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore} from "firebase/firestore";
 
 
+
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_APIKEY,
-  authDomain: process.env.REACT_APP_AUTHDOMAIN,
-  projectId: process.env.REACT_APP_PROJECTID,
-  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
-  appId: process.env.REACT_APP_APPID
+  apiKey: "AIzaSyAslsol35C41oALnb6Nyrx-3rSUBSDn1rk",
+  authDomain: "calache-ecommerce.firebaseapp.com",
+  projectId: "calache-ecommerce",
+  storageBucket: "calache-ecommerce.appspot.com",
+  messagingSenderId: "217667225030",
+  appId: "1:217667225030:web:eab48034c0cf511034dec7"
 };
 
 

@@ -2,7 +2,7 @@
 import { useContext, useState } from "react"
 import CartContext from "../../Context/CartContext"
 import { db } from "../../services/firebase/firebaseConfig"
-import { Timestamp, collection, getDocs, writeBatch } from "firebase/firestore"
+import { Timestamp, addDoc, collection, documentId, getDocs,query, where, writeBatch } from 'firebase/firestore'
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
 
 
@@ -27,7 +27,7 @@ const Checkout = () => {
             }
             const batch = writeBatch(db)
             const outOffStock = []
-            const ids = cart.map(prod => prod.id)
+            const id = cart.map(prod => prod.id)
             const productsRef = collection(db, 'products')
             const productsAddedFromFirestore = await getDocs(query(productsRef, where (documentId(), 'in', id)))
             const {docs} = productsAddedFromFirestore
